@@ -2,6 +2,7 @@
 
 namespace SVega9848\VegaTouchPot;
 
+use pocketmine\block\VanillaBlocks;
 use pocketmine\entity\effect\Effect;
 use pocketmine\entity\effect\EffectInstance;
 use pocketmine\entity\effect\VanillaEffects;
@@ -141,7 +142,7 @@ class Loader extends PluginBase implements Listener {
             $pos = $player->getDirectionVector();
             $pos->y += 0.75;
             $potion->setMotion($pos->multiply(0.4));
-            $player->getInventory()->setItemInHand(VanillaItems::AIR());
+            $player->getInventory()->setItemInHand(VanillaBlocks::AIR()->asItem());
         }
     }
 
