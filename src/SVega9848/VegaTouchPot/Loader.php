@@ -10,6 +10,7 @@ use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\item\PotionType;
 use pocketmine\item\SplashPotion;
 use pocketmine\item\VanillaItems;
+use pocketmine\block\VanillaBlocks;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 
@@ -141,7 +142,7 @@ class Loader extends PluginBase implements Listener {
             $pos = $player->getDirectionVector();
             $pos->y += 0.75;
             $potion->setMotion($pos->multiply(0.4));
-            $player->getInventory()->setItemInHand(VanillaItems::AIR());
+            $player->getInventory()->setItemInHand(VanillaBlocks::AIR()->asItem());
         }
     }
 
