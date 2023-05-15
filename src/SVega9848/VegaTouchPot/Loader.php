@@ -142,7 +142,7 @@ class Loader extends PluginBase implements Listener {
             $pos = $player->getDirectionVector();
             $pos->y += 0.75;
             $potion->setMotion($pos->multiply(0.4));
-            $player->getInventory()->setItemInHand(VanillaBlocks::AIR());
+            $player->getInventory()->setItemInHand(VanillaBlocks::AIR()->asItem());
         }
     }
 
