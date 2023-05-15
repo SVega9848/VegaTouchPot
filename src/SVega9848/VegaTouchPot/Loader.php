@@ -10,7 +10,7 @@ use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\item\PotionType;
 use pocketmine\item\SplashPotion;
 use pocketmine\item\VanillaItems;
-use pocketmine\item\VanillaBlocks;
+use pocketmine\block\VanillaBlocks;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 
